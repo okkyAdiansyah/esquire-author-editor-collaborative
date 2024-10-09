@@ -1,0 +1,15 @@
+{
+    "name": "okky/esquire-live-collaborative",
+    "description": "plugin that will enable live collaboration between editor and author in esquire writer dashboard",
+    "type": "project",
+    "authors": [
+        {
+            "name": "okkyAdiansyah",
+            "email": "okkyadiansyah.0610@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Esq\\" : "./include"}
+    }
+}
