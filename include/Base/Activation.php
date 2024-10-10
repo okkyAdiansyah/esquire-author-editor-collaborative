@@ -14,8 +14,11 @@ class Activation {
      * @return WP_Error return WP error object if requirement isn't met
      */
     public static function elc_activate_plugin(){
-        do_action( 'wp_enqueue_scripts',  array(__CLASS__, 'elc_enqueued_script'));
-        do_action( 'wp_enqueue_scripts',  array(__CLASS__, 'elc_enqueued_style'));
+
+        flush_rewrite_rules( );
+
+        // do_action( 'wp_enqueue_scripts',  array(__CLASS__, 'elc_enqueued_script'));
+        // do_action( 'wp_enqueue_scripts',  array(__CLASS__, 'elc_enqueued_style'));
     }
 
     /**
