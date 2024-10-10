@@ -16,5 +16,9 @@ if(file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' )){
 }
 
 use Esq\Base\Activation;
+use Esq\PluginInit;
 
 register_activation_hook( __FILE__, array('Esq\Base\Activation', 'elc_activate_plugin') );
+
+$plugin = new PluginInit();
+$plugin->elc_plugin_init();
